@@ -1,0 +1,340 @@
+*, body{
+    box-sizing: border-box;
+}
+.app {
+    position: relative;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    width: 100%;
+    .header {
+        position: absolute;
+        top: 0;
+        padding: 5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
+        h2 {
+            font-size: 48px;
+        }
+        span {
+            border: 1px solid #F9DE4E;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .noTitle {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            .pages {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
+            .accountButtons {
+                .signUp {
+                    background-color: #F5F5F5;
+                    border-radius: 15px;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+    .greeting {
+        position: relative;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: row;
+        place-content: center;
+        background-color: #F9DE4E;
+        width: 100%;
+        .geometricShape {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            img {
+                max-width: 90%;
+            }
+        }
+        div {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: start;
+            h1 {
+                width: 100%;
+                font-size: 65px;
+                font-weight: 900;
+                margin: 4rem;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .invoiceTableDiv {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5rem;
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        h2 {
+            width: 85%;
+            font-size: 60px;
+            font-weight: 900;
+            margin: 3rem;
+            text-align: start;
+        }
+        table {
+            background-color: #FFFFFF;
+            .heading {
+                background-color: #F9DE4E;
+                .invoiceNumber {
+                    width: 15vw;
+                }
+                .creationDate {
+                    width: 50vw;
+                }
+                th {
+                    text-align: start;
+                    padding: 20px;
+                    border: 5px solid #F9DE4E;
+                    margin: 0;
+                }
+            }
+            .allInfos {
+                td {
+                    padding: 20px;
+                    text-align: start;
+                }
+                
+            }
+            
+        }
+        .allInfos:nth-child(odd){
+            background-color: #F5F5F5;
+        }
+    }
+    .contactTableDiv {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5rem;
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 150px;
+            transform: translate(-55px, 0px) rotate(25deg);
+        }
+        h2 {
+            width: 85%;
+            font-size: 60px;
+            font-weight: 900;
+            margin: 3rem;
+            text-align: start;
+        }
+        table {
+            background-color: #FFFFFF;
+            word-break: keep-all;
+            .heading {
+                background-color: #F9DE4E;
+                .creationDate {
+                    width: 35vw;
+                }
+                th {
+                    text-align: start;
+                    padding: 20px;
+                    border: 5px solid #F9DE4E;
+                    margin: 0;
+                }
+            }
+            .allInfos {
+                td {
+                    padding: 20px;
+                    text-align: start;
+                }
+                
+            }
+            
+        }
+        .allInfos:nth-child(odd){
+            background-color: #F5F5F5;
+        }
+    }
+    .companiesTableDiv {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5rem;
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        h2 {
+            width: 85%;
+            font-size: 60px;
+            font-weight: 900;
+            margin: 3rem;
+            text-align: start;
+        }
+        table {
+            background-color: #FFFFFF;
+            word-break: keep-all;
+            .heading {
+                background-color: #F9DE4E;
+                .creationDate {
+                    width: 45vw;
+                }
+                th {
+                    text-align: start;
+                    padding: 20px;
+                    border: 5px solid #F9DE4E;
+                    margin: 0;
+                }
+            }
+            .allInfos {
+                td {
+                    padding: 20px;
+                    text-align: start;
+                }
+                
+            }
+            
+        }
+        .allInfos:nth-child(odd){
+            background-color: #F5F5F5;
+        }
+    }
+    .propaganda {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .phonePropaganda {
+            width: 45%;
+            height: 410px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("Rectangle 17.png");
+            img {
+                width: 65%;
+            }
+        }
+        .textPropaganda {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                width: 55%;
+                font-size: 68px;
+                font-weight: 900;
+            }
+        }
+    }
+    .footerSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            .footerDiv {
+                padding: 5rem 2rem 10rem 2rem ;
+                display: flex;
+                flex-direction: row;
+                border-top: 1px solid #F9DE4E;
+                border-bottom: 1px solid #7BB9FC;
+                width: 80%;
+                .logoFooter {
+                    width: 50%;
+                    span {
+                        border: 5px solid #F9DE4E;
+                        font-size: 48px;
+                        color: #434138;
+                        padding: 5px;
+                    }
+                }
+                .infosBusiness {
+                    width: 50%;
+                    color: #737373;
+                    font-weight: 400;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    .socials {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    .dual {
+                        color: #737373;
+                        font-weight: 400;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        .number {
+                            display: flex;
+                            justify-content: space-between;
+                            span {
+                                display: flex;
+                                gap: 1rem;
+                            }
+                        }
+                        .location {
+                            span {
+                                display: flex;
+                                gap: 1rem;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .footerThings {
+                font-weight: 400;
+                width: 80%;
+                margin: 2rem;
+                font-size: 14px;
+                display: flex;
+                flex-direction: row;
+                color: #737373;
+                justify-content: space-between;
+                .pagesLinks {
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

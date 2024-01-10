@@ -1,0 +1,324 @@
+*, body {
+  box-sizing: border-box;
+}
+
+.app {
+  position: relative;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+}
+.app .header {
+  position: absolute;
+  top: 0;
+  padding: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+}
+.app .header h2 {
+  font-size: 48px;
+}
+.app .header span {
+  border: 1px solid #F9DE4E;
+  padding: 10px;
+  font-size: 20px;
+}
+.app .header .noTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.app .header .noTitle .pages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.app .header .noTitle .accountButtons .signUp {
+  background-color: #F5F5F5;
+  border-radius: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.app .greeting {
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  background-color: #F9DE4E;
+  width: 100%;
+}
+.app .greeting .geometricShape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.app .greeting .geometricShape img {
+  max-width: 90%;
+}
+.app .greeting div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+.app .greeting div h1 {
+  width: 100%;
+  font-size: 65px;
+  font-weight: 900;
+  margin: 4rem;
+}
+.app .greeting div img {
+  width: 100%;
+}
+.app .invoiceTableDiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.app .invoiceTableDiv img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.app .invoiceTableDiv h2 {
+  width: 85%;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 3rem;
+  text-align: start;
+}
+.app .invoiceTableDiv table {
+  background-color: #FFFFFF;
+}
+.app .invoiceTableDiv table .heading {
+  background-color: #F9DE4E;
+}
+.app .invoiceTableDiv table .heading .invoiceNumber {
+  width: 15vw;
+}
+.app .invoiceTableDiv table .heading .creationDate {
+  width: 50vw;
+}
+.app .invoiceTableDiv table .heading th {
+  text-align: start;
+  padding: 20px;
+  border: 5px solid #F9DE4E;
+  margin: 0;
+}
+.app .invoiceTableDiv table .allInfos td {
+  padding: 20px;
+  text-align: start;
+}
+.app .invoiceTableDiv .allInfos:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+.app .contactTableDiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.app .contactTableDiv img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  transform: translate(-55px, 0px) rotate(25deg);
+}
+.app .contactTableDiv h2 {
+  width: 85%;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 3rem;
+  text-align: start;
+}
+.app .contactTableDiv table {
+  background-color: #FFFFFF;
+  word-break: keep-all;
+}
+.app .contactTableDiv table .heading {
+  background-color: #F9DE4E;
+}
+.app .contactTableDiv table .heading .creationDate {
+  width: 35vw;
+}
+.app .contactTableDiv table .heading th {
+  text-align: start;
+  padding: 20px;
+  border: 5px solid #F9DE4E;
+  margin: 0;
+}
+.app .contactTableDiv table .allInfos td {
+  padding: 20px;
+  text-align: start;
+}
+.app .contactTableDiv .allInfos:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+.app .companiesTableDiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.app .companiesTableDiv img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.app .companiesTableDiv h2 {
+  width: 85%;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 3rem;
+  text-align: start;
+}
+.app .companiesTableDiv table {
+  background-color: #FFFFFF;
+  word-break: keep-all;
+}
+.app .companiesTableDiv table .heading {
+  background-color: #F9DE4E;
+}
+.app .companiesTableDiv table .heading .creationDate {
+  width: 45vw;
+}
+.app .companiesTableDiv table .heading th {
+  text-align: start;
+  padding: 20px;
+  border: 5px solid #F9DE4E;
+  margin: 0;
+}
+.app .companiesTableDiv table .allInfos td {
+  padding: 20px;
+  text-align: start;
+}
+.app .companiesTableDiv .allInfos:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+.app .propaganda {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.app .propaganda .phonePropaganda {
+  width: 45%;
+  height: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("Rectangle 17.png");
+}
+.app .propaganda .phonePropaganda img {
+  width: 65%;
+}
+.app .propaganda .textPropaganda {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app .propaganda .textPropaganda h1 {
+  width: 55%;
+  font-size: 68px;
+  font-weight: 900;
+}
+.app .footerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+.app .footerSection .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.app .footerSection .footer .footerDiv {
+  padding: 5rem 2rem 10rem 2rem;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #F9DE4E;
+  border-bottom: 1px solid #7BB9FC;
+  width: 80%;
+}
+.app .footerSection .footer .footerDiv .logoFooter {
+  width: 50%;
+}
+.app .footerSection .footer .footerDiv .logoFooter span {
+  border: 5px solid #F9DE4E;
+  font-size: 48px;
+  color: #434138;
+  padding: 5px;
+}
+.app .footerSection .footer .footerDiv .infosBusiness {
+  width: 50%;
+  color: #737373;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.app .footerSection .footer .footerDiv .infosBusiness .socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.app .footerSection .footer .footerDiv .infosBusiness .dual {
+  color: #737373;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.app .footerSection .footer .footerDiv .infosBusiness .dual .number {
+  display: flex;
+  justify-content: space-between;
+}
+.app .footerSection .footer .footerDiv .infosBusiness .dual .number span {
+  display: flex;
+  gap: 1rem;
+}
+.app .footerSection .footer .footerDiv .infosBusiness .dual .location span {
+  display: flex;
+  gap: 1rem;
+}
+.app .footerSection .footer .footerThings {
+  font-weight: 400;
+  width: 80%;
+  margin: 2rem;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  color: #737373;
+  justify-content: space-between;
+}
+.app .footerSection .footer .footerThings .pagesLinks {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */

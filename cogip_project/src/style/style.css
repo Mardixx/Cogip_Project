@@ -15,9 +15,10 @@
   position: absolute;
   top: 0;
   padding: 5rem;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
+  z-index: 999;
   align-items: center;
   gap: 5rem;
 }
@@ -34,13 +35,17 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 80vw;
 }
 .app .header .noTitle .pages {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 80%;
   gap: 1rem;
+}
+.app .header .noTitle .accountButtons {
+  width: 20%;
 }
 .app .header .noTitle .accountButtons .signUp {
   background-color: #F5F5F5;
@@ -56,7 +61,7 @@
   flex-direction: row;
   place-content: center;
   background-color: #F9DE4E;
-  width: 100%;
+  width: 100vw;
 }
 .app .greeting .geometricShape {
   position: absolute;
@@ -75,12 +80,279 @@
 }
 .app .greeting div h1 {
   width: 100%;
-  font-size: 65px;
+  font-size: 5vw;
   font-weight: 900;
   margin: 4rem;
 }
 .app .greeting div img {
   width: 100%;
+}
+.app .allInvoices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .allInvoices .allInvoicesTop {
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  background-color: #F9DE4E;
+  width: 100vw;
+  height: 35vh;
+}
+.app .allInvoices .allInvoicesTop .geometricShape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.app .allInvoices .allInvoicesTop .geometricShape img {
+  max-width: 90%;
+}
+.app .allInvoices .allInvoicesTop div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+.app .allInvoices .allInvoicesTop div h1 {
+  width: 100%;
+  font-size: 5vw;
+  font-weight: 900;
+  margin: 4rem;
+}
+.app .allInvoices .allInvoicesTop div img {
+  width: 100%;
+}
+.app .allInvoices .allInvoicesTable {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .allInvoices .allInvoicesTable h2 {
+  position: relative;
+  width: 90%;
+  z-index: 99;
+  font-weight: 900;
+  font-size: 48px;
+  margin: 3rem;
+  text-align: start;
+}
+.app .allInvoices .allInvoicesTable h2 .colorH2 {
+  z-index: -1;
+  position: absolute;
+  bottom: 5%;
+  left: 7rem;
+  background-color: #F9DE4E;
+  width: 13rem;
+  height: 2vh;
+}
+.app .allInvoices .allInvoicesTable table {
+  background-color: #FFFFFF;
+}
+.app .allInvoices .allInvoicesTable table .heading {
+  background-color: #F9DE4E;
+}
+.app .allInvoices .allInvoicesTable table .heading .invoiceNumber {
+  width: 15vw;
+}
+.app .allInvoices .allInvoicesTable table .heading .creationDate {
+  width: 50vw;
+}
+.app .allInvoices .allInvoicesTable table .heading th {
+  text-align: start;
+  padding: 20px;
+  border: 5px solid #F9DE4E;
+  margin: 0;
+}
+.app .allInvoices .allInvoicesTable table .allInfos td {
+  padding: 20px;
+  text-align: start;
+}
+.app .allInvoices .allInvoicesTable .allInfos:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+.app .allContacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .allContacts .allContactsTop {
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  background-color: #F9DE4E;
+  width: 100vw;
+  height: 35vh;
+}
+.app .allContacts .allContactsTop .geometricShape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.app .allContacts .allContactsTop .geometricShape img {
+  max-width: 90%;
+}
+.app .allContacts .allContactsTop div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+.app .allContacts .allContactsTop div h1 {
+  width: 100%;
+  font-size: 5vw;
+  font-weight: 900;
+  margin: 4rem;
+}
+.app .allContacts .allContactsTop div img {
+  width: 100%;
+}
+.app .allContacts .allContactsTable {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .allContacts .allContactsTable h2 {
+  position: relative;
+  width: 90%;
+  z-index: 99;
+  font-weight: 900;
+  font-size: 48px;
+  margin: 3rem;
+  text-align: start;
+}
+.app .allContacts .allContactsTable h2 .colorH2 {
+  z-index: -1;
+  position: absolute;
+  bottom: 5%;
+  left: 7rem;
+  background-color: #F9DE4E;
+  width: 13rem;
+  height: 2vh;
+}
+.app .allContacts .allContactsTable table {
+  background-color: #FFFFFF;
+}
+.app .allContacts .allContactsTable table .heading {
+  background-color: #F9DE4E;
+}
+.app .allContacts .allContactsTable table .heading .invoiceNumber {
+  width: 15vw;
+}
+.app .allContacts .allContactsTable table .heading .creationDate {
+  width: 50vw;
+}
+.app .allContacts .allContactsTable table .heading th {
+  text-align: start;
+  padding: 20px;
+  border: 5px solid #F9DE4E;
+  margin: 0;
+}
+.app .allContacts .allContactsTable table .allInfos td {
+  padding: 20px;
+  text-align: start;
+}
+.app .allContacts .allContactsTable .allInfos:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+.app .allCompanies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .allCompanies .allCompaniesTop {
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  background-color: #F9DE4E;
+  width: 100vw;
+  height: 35vh;
+}
+.app .allCompanies .allCompaniesTop .geometricShape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.app .allCompanies .allCompaniesTop .geometricShape img {
+  max-width: 90%;
+}
+.app .allCompanies .allCompaniesTop div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+.app .allCompanies .allCompaniesTop div h1 {
+  width: 100%;
+  font-size: 5vw;
+  font-weight: 900;
+  margin: 4rem;
+}
+.app .allCompanies .allCompaniesTop div img {
+  width: 100%;
+}
+.app .allCompanies .allCompaniesTable {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .allCompanies .allCompaniesTable h2 {
+  position: relative;
+  width: 90%;
+  z-index: 99;
+  font-weight: 900;
+  font-size: 48px;
+  margin: 3rem;
+  text-align: start;
+}
+.app .allCompanies .allCompaniesTable h2 .colorH2 {
+  z-index: -1;
+  position: absolute;
+  bottom: 5%;
+  left: 7rem;
+  background-color: #F9DE4E;
+  width: 13rem;
+  height: 2vh;
+}
+.app .allCompanies .allCompaniesTable table {
+  background-color: #FFFFFF;
+}
+.app .allCompanies .allCompaniesTable table .heading {
+  background-color: #F9DE4E;
+}
+.app .allCompanies .allCompaniesTable table .heading .creationDate {
+  width: 50vw;
+}
+.app .allCompanies .allCompaniesTable table .heading th {
+  text-align: start;
+  padding: 20px;
+  border: 5px solid #F9DE4E;
+  margin: 0;
+}
+.app .allCompanies .allCompaniesTable table .allInfos td {
+  padding: 20px;
+  text-align: start;
+}
+.app .allCompanies .allCompaniesTable .allInfos:nth-child(odd) {
+  background-color: #F5F5F5;
 }
 .app .invoiceTableDiv {
   position: relative;
@@ -249,6 +521,7 @@
   justify-content: center;
   align-items: center;
   padding: 5rem;
+  width: 100%;
 }
 .app .footerSection .footer {
   display: flex;

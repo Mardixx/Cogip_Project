@@ -13,9 +13,10 @@
         position: absolute;
         top: 0;
         padding: 5rem;
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: row;
+        z-index: 999;
         align-items: center;
         gap: 5rem;
         h2 {
@@ -31,14 +32,16 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            width: 80%;
+            width: 80vw;
             .pages {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                width: 80%;
                 gap: 1rem;
             }
             .accountButtons {
+                width: 20%;
                 .signUp {
                     background-color: #F5F5F5;
                     border-radius: 15px;
@@ -56,7 +59,7 @@
         flex-direction: row;
         place-content: center;
         background-color: #F9DE4E;
-        width: 100%;
+        width: 100vw;
         .geometricShape {
             position: absolute;
             bottom: 0;
@@ -73,7 +76,7 @@
             text-align: start;
             h1 {
                 width: 100%;
-                font-size: 65px;
+                font-size: 5vw;
                 font-weight: 900;
                 margin: 4rem;
             }
@@ -82,6 +85,283 @@
             }
         }
     }
+    .allInvoices {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .allInvoicesTop {
+            position: relative;
+            padding-top: 7rem;
+            padding-bottom: 3rem;
+            display: flex;
+            flex-direction: row;
+            place-content: center;
+            background-color: #F9DE4E;
+            width: 100vw;
+            height: 35vh;
+            .geometricShape {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                img {
+                    max-width: 90%;
+                }
+            }
+            div {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: start;
+                h1 {
+                    width: 100%;
+                    font-size: 5vw;
+                    font-weight: 900;
+                    margin: 4rem;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .allInvoicesTable {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                position: relative;
+                width: 90%;
+                z-index: 99;
+                font-weight: 900;
+                font-size: 48px;
+                margin: 3rem;
+                text-align: start;
+                .colorH2 {
+                    z-index: -1;
+                    position: absolute;
+                    bottom: 5%;
+                    left: 7rem;
+                    background-color: #F9DE4E;
+                    width: 13rem;
+                    height: 2vh;
+                }
+            }
+            table {
+                background-color: #FFFFFF;
+                .heading {
+                    background-color: #F9DE4E;
+                    .invoiceNumber {
+                        width: 15vw;
+                    }
+                    .creationDate {
+                        width: 50vw;
+                    }
+                    th {
+                        text-align: start;
+                        padding: 20px;
+                        border: 5px solid #F9DE4E;
+                        margin: 0;
+                    }
+                }
+                .allInfos {
+                    td {
+                        padding: 20px;
+                        text-align: start;
+                    }
+                    
+                }
+            }
+            .allInfos:nth-child(odd){
+                background-color: #F5F5F5;
+            }
+        }
+    }
+    .allContacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .allContactsTop {
+            position: relative;
+            padding-top: 7rem;
+            padding-bottom: 3rem;
+            display: flex;
+            flex-direction: row;
+            place-content: center;
+            background-color: #F9DE4E;
+            width: 100vw;
+            height: 35vh;
+            .geometricShape {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                img {
+                    max-width: 90%;
+                }
+            }
+            div {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: start;
+                h1 {
+                    width: 100%;
+                    font-size: 5vw;
+                    font-weight: 900;
+                    margin: 4rem;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .allContactsTable {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                position: relative;
+                width: 90%;
+                z-index: 99;
+                font-weight: 900;
+                font-size: 48px;
+                margin: 3rem;
+                text-align: start;
+                .colorH2 {
+                    z-index: -1;
+                    position: absolute;
+                    bottom: 5%;
+                    left: 7rem;
+                    background-color: #F9DE4E;
+                    width: 13rem;
+                    height: 2vh;
+                }
+            }
+            table {
+                background-color: #FFFFFF;
+                .heading {
+                    background-color: #F9DE4E;
+                    .invoiceNumber {
+                        width: 15vw;
+                    }
+                    .creationDate {
+                        width: 50vw;
+                    }
+                    th {
+                        text-align: start;
+                        padding: 20px;
+                        border: 5px solid #F9DE4E;
+                        margin: 0;
+                    }
+                }
+                .allInfos {
+                    td {
+                        padding: 20px;
+                        text-align: start;
+                    }
+                    
+                }
+            }
+            .allInfos:nth-child(odd){
+                background-color: #F5F5F5;
+            }
+        }
+    }
+    .allCompanies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .allCompaniesTop {
+            position: relative;
+            padding-top: 7rem;
+            padding-bottom: 3rem;
+            display: flex;
+            flex-direction: row;
+            place-content: center;
+            background-color: #F9DE4E;
+            width: 100vw;
+            height: 35vh;
+            .geometricShape {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                img {
+                    max-width: 90%;
+                }
+            }
+            div {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: start;
+                h1 {
+                    width: 100%;
+                    font-size: 5vw;
+                    font-weight: 900;
+                    margin: 4rem;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .allCompaniesTable {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                position: relative;
+                width: 90%;
+                z-index: 99;
+                font-weight: 900;
+                font-size: 48px;
+                margin: 3rem;
+                text-align: start;
+                .colorH2 {
+                    z-index: -1;
+                    position: absolute;
+                    bottom: 5%;
+                    left: 7rem;
+                    background-color: #F9DE4E;
+                    width: 13rem;
+                    height: 2vh;
+                }
+            }
+            table {
+                background-color: #FFFFFF;
+                .heading {
+                    background-color: #F9DE4E;
+                    .creationDate {
+                        width: 50vw;
+                    }
+                    th {
+                        text-align: start;
+                        padding: 20px;
+                        border: 5px solid #F9DE4E;
+                        margin: 0;
+                    }
+                }
+                .allInfos {
+                    td {
+                        padding: 20px;
+                        text-align: start;
+                    }
+                    
+                }
+            }
+            .allInfos:nth-child(odd){
+                background-color: #F5F5F5;
+            }
+        }
+    }
+    
     .invoiceTableDiv {
         position: relative;
         display: flex;
@@ -261,6 +541,7 @@
         justify-content: center;
         align-items: center;
         padding: 5rem;
+        width: 100%;
         .footer {
             display: flex;
             justify-content: center;

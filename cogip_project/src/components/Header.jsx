@@ -9,9 +9,9 @@ export const Header = () => {
             <div className="noTitle">
                 <div className="pages">
                     <Link to='/'><span>Home</span></Link>
-                    <span>Invoices</span>
-                    <span>Companies</span>
-                    <span>Contacts</span>
+                    <Link to='/Invoices'><span>Invoices</span></Link>
+                    <Link to='/Companies'><span>Companies</span></Link>
+                    <Link to='/Contacts'><span>Contacts</span></Link>
                 </div>
                 <div className="accountButtons">
                     <span className="signUp">Sign up</span>

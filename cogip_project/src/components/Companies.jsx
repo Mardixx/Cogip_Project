@@ -1,18 +1,26 @@
 export const Companies = (companies) => {
     const data = companies.companies;
     
-
+    if (data.length == 0) {
+        return (
+            <div className="companiesTableDiv">
+                <h2>Last Companies</h2>
+                <div className="loadingContainer">
+                    <div className="loading"></div>
+                </div>
+            </div>
+        )
+    }
     return (
         <div className="companiesTableDiv">
-            
             <h2>Last companies</h2>
             <table>
                 <tbody>
                     <tr className="heading">
                         <th className="name">Name</th>
-                        <th className="tva">Phone due</th>
+                        <th className="tva">TVA</th>
                         <th className="country">Mail</th>
-                        <th className="type">Company</th>
+                        <th className="type">Type</th>
                         <th className="creationDate">Created at</th>
                     </tr>
                     {data.map(companies => (
@@ -25,8 +33,7 @@ export const Companies = (companies) => {
                         </tr>
                     ))}
                 </tbody>
-            </table>
-                
+            </table> 
         </div>
     )
 }

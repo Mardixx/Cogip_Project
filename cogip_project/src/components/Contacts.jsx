@@ -1,6 +1,16 @@
 export const Contacts = (contacts) => {
     const data = contacts.contacts;
 
+    if (data.length == 0) {
+        return (
+            <div className="contactTableDiv">
+                <h2>Last Contacts</h2>
+                <div className="loadingContainer">
+                    <div className="loading"></div>
+                </div>
+            </div>
+        )
+    }
     return (
         <div className="contactTableDiv">
             
@@ -24,10 +34,8 @@ export const Contacts = (contacts) => {
                         </tr>
                     ))}
                 </tbody>
-                
             </table>
-            <img src="lightBulb.png" alt="Calpin PNG" />
-                
+            <img src="lightBulb.png" alt="Calpin PNG" />  
         </div>
     )
 }

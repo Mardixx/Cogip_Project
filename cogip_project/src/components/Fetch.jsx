@@ -6,6 +6,7 @@ import { Companies } from "./Companies";
 import { AllInvoices } from "./AllInvoices";
 import { AllContacts } from "./AllContacts";
 import { AllCompanies } from "./AllCompanies";
+import { DashBoard } from "./DashBoard";
 
 export const FetchingInvoices = () => {
     const [invoices, setInvoices] = useState([]);
@@ -96,6 +97,10 @@ export const FetchingDashboard = () => {
     const [allInvoices, setAllInvoices] = useState([]);
     const [allContacts, setAllContacts] = useState([]);
     const [allCompanies, setAllCompanies] = useState([]);
+    const [allInvoicesStats, setAllInvoicesStats] = useState([]);
+    const [allContactsStats, setAllContactsStats] = useState([]);
+    const [allCompaniesStats, setAllCompaniesStats] = useState([]);
+
     const allInvoicesFetch = () => {
         fetch("https://cogip-990e44950882.herokuapp.com/invoices")
         .then(response => response.json())
@@ -111,9 +116,34 @@ export const FetchingDashboard = () => {
         .then(response => response.json())
         .then(data => setAllCompanies(data.data.slice(0, 4)));
     }
+    const allInvoicesStatsFetch = () => {
+        fetch("https://cogip-990e44950882.herokuapp.com/invoices/count")
+        .then(response => response.json())
+        .then(data => setAllInvoicesStats(data.data));
+    }
+    const allContactsStatsFetch = () => {
+        fetch("https://cogip-990e44950882.herokuapp.com/contacts/count")
+        .then(response => response.json())
+        .then(data => setAllContactsStats(data.data));
+    }
+    const allCompaniesStatsFetch = () => {
+        fetch("https://cogip-990e44950882.herokuapp.com/companies/count")
+        .then(response => response.json())
+        .then(data => setAllCompaniesStats(data.data));
+    }
+
     useEffect(() => {
         allInvoicesFetch();
         allContactsFetch();
         allCompaniesFetch();
+        allInvoicesStatsFetch();
+        allContactsStatsFetch();
+        allCompaniesStatsFetch();
     }, []);
+    
+    const datas = [allInvoices, allContacts, allCompanies, allInvoicesStats, allContactsStats, allCompaniesStats]
+
+    return (
+        <DashBoard key="DashBoard" data={datas} />
+    )
 }

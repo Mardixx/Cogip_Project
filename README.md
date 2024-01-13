@@ -1,12 +1,8 @@
-# Cogip Project
+# React + Vite
 
-This is a project given to us by BeCode, it is a "company" type of project.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-It's purpose as a front-end is to fetch data from an API created by the back-end developers.
+Currently, two official plugins are available:
 
-Not started seems I changed orientation midway and had to work on the things I missed.
-
-# Language(s)
-
-![REACT](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![VITE](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

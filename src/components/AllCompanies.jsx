@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
@@ -43,7 +44,7 @@ export const AllCompanies = ( allCompanies ) => {
                         </tr>
                         {data.map(companies => (
                             <tr key={companies.id} className="allInfos">
-                                <td className="name">{ companies.name }</td>
+                                <td className="name"><Link to ="/CompaniesDetails" state={{ companies: companies  }}>{ companies.name }</Link></td>
                                 <td className="tva">{ companies.tva }</td>
                                 <td className="country">{ companies.country }</td>
                                 <td className="type">{ companies.types_name }</td>

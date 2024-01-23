@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Footer } from "./Footer";
 import { Header } from "./Header"
+import { Link } from "react-router-dom";
 
 export const AllInvoices = ( allInvoices ) => {
     const data = allInvoices.allInvoices;
@@ -36,13 +38,13 @@ export const AllInvoices = ( allInvoices ) => {
                     <tbody>
                         <tr className="heading">
                             <th className="invoiceNumber">Invoice number</th>
-                            <th className="dueDate">Dates due</th>
+                            <th className="dueDate">Dates due <img src="Polygon 1.svg" alt="polygon svg" /></th>
                             <th className="companyName">Company</th>
                             <th className="creationDate">Created at</th>
                         </tr>
                         {data.map(invoice => (
                             <tr key={invoice.id} className="allInfos">
-                                <td className="invoiceNumber">{ invoice.ref }</td>
+                                <td className="invoiceNumber" id={invoice.id}><Link to="/InvoiceDetails" state={{ invoice: invoice }}>{ invoice.ref }</Link></td>
                                 <td className="dueDate">{ invoice.due_at.slice(0, 10) }</td>
                                 <td className="companyName">{ invoice.name }</td>
                                 <td className="creationDate">{ invoice.updated_at.slice(0, 10) }</td>

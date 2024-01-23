@@ -7,6 +7,9 @@ import { AllInvoices } from "./AllInvoices";
 import { AllContacts } from "./AllContacts";
 import { AllCompanies } from "./AllCompanies";
 import { DashBoard } from "./DashBoard";
+import { InvoiceDetails } from "./InvoiceDetails";
+import { useLocation } from "react-router-dom";
+import { CompaniesDetails } from "./CompaniesDetails";
 
 export const FetchingInvoices = () => {
     const [invoices, setInvoices] = useState([]);
@@ -84,7 +87,7 @@ export const FetchingAllCompanies = () => {
     const allCompaniesFetch = () => {
         fetch("https://cogip-990e44950882.herokuapp.com/companies")
         .then(response => response.json())
-        .then(data => setAllCompanies(data.data.slice(0, 5)));
+        .then(data => setAllCompanies(data.data));
     }
     useEffect(() => {
         allCompaniesFetch();
@@ -134,7 +137,7 @@ export const FetchingDashboard = () => {
 
     useEffect(() => {
         allInvoicesFetch();
-        allContactsFetch();
+        allContactsFetch(); 
         allCompaniesFetch();
         allInvoicesStatsFetch();
         allContactsStatsFetch();
@@ -145,5 +148,57 @@ export const FetchingDashboard = () => {
 
     return (
         <DashBoard key="DashBoard" data={datas} />
+    )
+}
+export const DetailsFetch = () => {
+    const [details, setDetails] = useState([]);
+    const [invoiceData, setInvoiceData] = useState([]);
+
+    const location = useLocation();
+    const { invoice } = location.state;
+
+    const dataFromInvoice = () => {
+        setInvoiceData(invoice);
+    }
+    let id = invoiceData.id;
+
+    useEffect(() => {
+        dataFromInvoice();
+    }, []);
+
+    if (id == null) console.log('Loading') 
+    else {
+        fetch("https://cogip-990e44950882.herokuapp.com/invoices/" + id)
+        .then(results => results.json())
+        .then(data => setDetails(data.data));
+    }
+    return (
+        <InvoiceDetails datas = {details} />
+    )
+}
+export const CompaniesDetailsFetch = () => {
+    const [details, setDetails] = useState([]);
+    const [companiesData, setCompaniesData] = useState([]);
+
+    const location = useLocation();
+    const { companies } = location.state;
+
+    const dataFromCompanies = () => {
+        setCompaniesData(companies);
+    }
+    let id = companiesData.id;
+
+    useEffect(() => {
+        dataFromCompanies();
+    }, []);
+
+    if (id == null) console.log('Loading') 
+    else {
+        fetch("https://cogip-990e44950882.herokuapp.com/companies/" + id)
+        .then(results => results.json())
+        .then(data => setDetails(data.data));
+    }
+    return (
+        <CompaniesDetails datas = {details} />
     )
 }

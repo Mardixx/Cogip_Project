@@ -48,10 +48,12 @@
   width: 20%;
 }
 .app .header .noTitle .accountButtons .signUp {
+  width: 10%;
   background-color: #F5F5F5;
   border-radius: 15px;
-  padding-right: 20px;
-  padding-left: 20px;
+}
+.app .header .noTitle .accountButtons .login {
+  width: 10%;
 }
 .app .details {
   display: flex;
@@ -923,13 +925,13 @@
   justify-content: center;
   flex-direction: row;
   width: 100%;
-  height: 150vh;
+  height: 200vh;
 }
 .app .dashBoard {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 170vh;
+  height: 200vh;
 }
 .app .dashBoard .sideMenu {
   display: flex;
@@ -994,7 +996,7 @@
 .app .dashBoard .content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 100px;
   align-items: center;
   width: 90%;
   border-left: 1px solid #E7E7E7;
@@ -1107,13 +1109,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 50vh;
   width: 100%;
   color: #FFFFFF;
 }
 .app .dashBoard .content .welcomeMessage .page {
   width: 90%;
-  padding-top: 2rem;
+  height: 300px;
+  padding-top: 30px;
   color: #000000;
 }
 .app .dashBoard .content .welcomeMessage .page h2 {
@@ -1135,7 +1137,7 @@
   border-radius: 10px;
   background: #9698D6;
   width: 90%;
-  height: 60%;
+  height: 200px;
 }
 .app .dashBoard .content .welcomeMessage .text h2 {
   font-size: 35px;
@@ -1146,7 +1148,8 @@
 }
 .app .dashBoard .content .welcomeMessage img {
   position: absolute;
-  right: 15%;
+  right: 10%;
+  width: 25vw;
 }
 .app .dashBoard .content .formNewInvoice {
   width: 90%;
